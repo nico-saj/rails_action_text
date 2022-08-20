@@ -1,0 +1,7 @@
+.notebooks
+  - @notebooks.each do |notebook|
+    .notebook
+      = link_to notebook.name, notebook
+
+.new-link
+  = link_to 'New Notebook', new_notebook_path

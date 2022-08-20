@@ -1,0 +1,9 @@
+= form_for @notebook do |form|
+  .field
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :content
+    = form.rich_text_area :content
+  .field
+    = form.submit
