@@ -4,7 +4,7 @@ class NotebooksController < ApplicationController
   end
 
   def show
-    @notebook = Notebook.find_by(id: params[:id])
+    @notebook = Notebook.with_all_rich_text.find_by(id: params[:id])
   end
 
   def new
